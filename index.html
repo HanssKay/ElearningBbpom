@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- linkEnd -->
+    <title>Elearning</title>
+</head>
+<body class="h-2000">
+    <header class="bg-four flex fixed w-full z-50">
+        <div class="container ">
+            <nav class="md:flex md:justify-between gap-3 md:items-center">
+                <div class="flex mt-3 lg:ms-16 md:ms-5 ms-3  mb-3 p-1 ">
+                    <img class="lg:h-18 h-12" src="Asset/Arun.png" alt="">
+                    <h1 class="font-one content-center md:ms-5 ms-2 text-one lg:text-lg md:text-sm text-xs font-bold">KAHAYAN INPRO</h1>
+                </div>
+                <ul class="gap-5 md:flex lg:me-20 md:me-29 md:items-center content-center absolute right-10 md:w-auto text-center md:bg-transparent bg-blue-400 rounded-sm w-[99px] h-[115px] z-[-1] md:z-auto 
+                transition-all ease-in-out duration-400 md:opacity-100 opacity-0">
+                    <li class="group nav-link">
+                        <a class="md:text-one text-one lg:text-lg md:text-sm text-xs font-one font-bold group-hover:text-blue-500" href="#home">Home</a>
+                    </li>
+                    <li class="group">
+                        <a class="md:text-one text-one lg:text-lg md:text-sm text-xs font-one font-bold group-hover:text-blue-500" href="#about">About</a>
+                    </li>
+                    <li class="group">
+                        <a class="md:text-one text-one lg:text-lg md:text-sm text-xs font-one font-bold group-hover:text-blue-500" href="#contact">Contact</a>
+                    </li>
+                    <li class="group">
+                        <a class="md:text-one  text-one lg:text-lg md:text-sm text-xs font-one font-bold group-hover:text-blue-500" href="signup.html">Sign Up</a>
+                    </li>
+                </ul> 
+                <div class="absolute lg:right-9 md:right-1 right-17 lg:top-8 md:top-5.5 top-5.5">
+                    <div class="flex md:me-4 mt-1.5 md:gap-4 gap-2">
+                        <!-- <div class="">
+                            <a href="md:text-lg text-xs">Sign Up</a>
+                        </div> -->
+                        <div class="">
+                            <a class="md:text-lg text-sm font-bold hover:text-blue-500" href="login.html">Log In</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="absolute text-one text-4xl md:hidden top-5.5 right-5.5 ">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- Hero -->
+<section id="home" class="relative bg-cover bg-center text-black py-20 px-6" style="background-image: url('aset/book.jpg');">
+    <div class="container mx-auto flex items-center">
+        <div class="w-full md:w-1/2 bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Belajar Dimana Saja & Kapan Saja</h1>
+            <p class="text-lg mb-6">Platform e-learning terbaik untuk meningkatkan keterampilan Anda dengan materi yang berkualitas.</p>
+            <a href="#" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition">Mulai Belajar</a>
+        </div>
+    </div>
+</section>
+<!-- AboutSec -->
+ <section>
+
+ </section>
+
+<!-- HamSect -->
+    <script>
+        function Menu(e) {
+            let list = document.querySelector("ul");
+            e.name === 'menu-outline' ? ( e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100")) 
+            : (e.name = "menu-outline", list.classList.remove ("top-[80px]"), list.classList.remove("opacity-100"))
+    
+        }
+    </script>
+<!-- ScrolSec -->
+<script>
+   
+</script>
+</body>
+</html>
